@@ -84,6 +84,8 @@ async function main() {
             run_id: runID,
         })
 
+        console.log("==> Artifacts:", artifacts)
+
         // One artifact or all if `name` input is not specified.
         if (name) {
             artifacts = artifacts.data.artifacts.filter((artifact) => {
